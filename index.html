@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>ToneGeniuss | Viral Ringtones</title>  
+  <script src="https://unpkg.com/wavesurfer.js"></script>  
+  <style>  
+    body { font-family: Arial; text-align: center; background: #000; color: #fff; }  
+    #waveform { margin: 20px; background: #222; height: 100px; }  
+    button { background: #FF00FF; color: white; border: none; padding: 10px; cursor: pointer; }  
+  </style>  
+</head>  
+<body>  
+  <h1>🔥 TONEGENIUSS 🔥</h1>  
+  <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL">  
+  <button onclick="loadSong()">CREATE RINGTONE</button>  
+  <div id="waveform"></div>  
+  <button onclick="pay()">💰 DOWNLOAD ($0.99)</button>  
+
+  <script>  
+    let wavesurfer = WaveSurfer.create({ container: '#waveform', waveColor: '#FF00FF' });  
+
+    async function loadSong() {  
+      const url = document.getElementById('youtubeUrl').value;  
+      wavesurfer.load('https://YOUR_RAILWAY_URL/download?url=' + url);  
+    }  
+
+    function pay() { alert('Payment coming soon!'); }  
+  </script>  
+</body>  
+</html>  
