@@ -1,0 +1,14 @@
+{  
+  "name": "ToneGeniuss-Ringtone-App",  
+  "version": "1.0.0",  
+  "scripts": {  
+    "start": "node server.js"  
+  },  
+  "dependencies": {  
+    "express": "^4.18.2",  
+    "ytdl-core": "^4.11.5"  
+  },  
+  "engines": {  
+    "node": "18.x"  
+  }  
+}  
